@@ -31,7 +31,7 @@ public class PingController {
 
     @RequestMapping(value = "ping", method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, String>> send(@RequestBody PingRequest pingRequest) throws Exception {
+    public ResponseEntity<Map<String, String>> send(@RequestBody PingRequest pingRequest) {
         logger.info("Request received is: " + pingRequest );
         Map<String, String> response = new HashMap<>();
         response.put("message", "");
