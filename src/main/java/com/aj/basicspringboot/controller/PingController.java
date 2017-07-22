@@ -40,6 +40,4 @@ public class PingController {
         }
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
-
-
 }
